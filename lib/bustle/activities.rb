@@ -18,6 +18,10 @@ module Bustle
       def by(publisher)
         Activity.to_adapter.where(:publisher_id =>  publisher.id )
       end
+      
+      def filter(options = {})
+        Activity.where(options)
+      end
     end
   end
 end
