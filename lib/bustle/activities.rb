@@ -16,11 +16,11 @@ module Bustle
       end
  
       def by(publisher)
-        Activity.to_adapter.where(:publisher_id =>  publisher.id )
+        Activity.where(:publisher_id =>  publisher.id )
       end
       
-      def filter(options = {})
-        Activity.where(options)
+      def filter(options = {}, *rest)
+        Activity.where(options, *rest)
       end
     end
   end
