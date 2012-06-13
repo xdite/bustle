@@ -20,19 +20,19 @@ module Bustle
       end
 
       def by(publisher)
-        Subscription.to_adapter.find_all(
+        Subscription.where(
           :publisher_id  => publisher.id
         )
       end
 
       def for(subscriber)
-        Subscription.to_adapter.find_all(
+        Subscription.where(
           :subscriber_id => subscriber.id
         )
       end
 
       def filter(options = {})
-        Subscription.to_adapter.find_all(options)
+        Subscription.where(options)
       end
     end
   end

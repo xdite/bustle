@@ -115,9 +115,9 @@ Complete list of APIs to build:
 - [x] `Bustle::Subscriber.destroy`
 - [x] `Bustle::Publisher.destroy`
 - [x] `Bustle::Subscription.destroy`
-- [ ] `Bustle::Activities.for`
+- [x] `Bustle::Activities.for`
 - [ ] `Bustle::Subscriber.activities`
-- [ ] `Bustle::Activities.by`
+- [x] `Bustle::Activities.by`
 - [ ] `Bustle::Publisher.activities`
 - [ ] `Bustle::Activities.filter`
 - [ ] `Bustle::Activities.delegate`
